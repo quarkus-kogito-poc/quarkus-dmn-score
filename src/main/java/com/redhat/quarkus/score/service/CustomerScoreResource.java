@@ -32,7 +32,7 @@ import org.reactivestreams.Publisher;
 public class CustomerScoreResource {
 
     @Inject
-    @Channel("cartaostream")
+    @Channel("scorestream")
     Publisher<String> messages;
     
     @GET
