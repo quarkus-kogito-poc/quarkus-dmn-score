@@ -201,6 +201,26 @@
           <columnWidth>114</columnWidth>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
         </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>customerSuspectResult</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1652634949975</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>customerSuspectResult</name>
+            <className>customerSuspectResult</className>
+          </factIdentifier>
+          <className>boolean</className>
+          <factAlias>customerSuspectResult</factAlias>
+          <expressionAlias>value</expressionAlias>
+          <columnWidth>114</columnWidth>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+        </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
     <scesimData>
@@ -315,6 +335,17 @@
             </expressionIdentifier>
             <rawValue class="string">1</rawValue>
           </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>customerSuspectResult</name>
+              <className>customerSuspectResult</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1652634949975</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">true</rawValue>
+          </FactMappingValue>
         </factMappingValues>
       </Scenario>
       <Scenario>
@@ -427,6 +458,17 @@
               <type>OTHER</type>
             </expressionIdentifier>
             <rawValue class="string">2</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>customerSuspectResult</name>
+              <className>customerSuspectResult</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1652634949975</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">false</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
@@ -541,6 +583,17 @@
             </expressionIdentifier>
             <rawValue class="string">3</rawValue>
           </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>customerSuspectResult</name>
+              <className>customerSuspectResult</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1652634949975</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">true</rawValue>
+          </FactMappingValue>
         </factMappingValues>
       </Scenario>
       <Scenario>
@@ -654,6 +707,17 @@
             </expressionIdentifier>
             <rawValue class="string">4</rawValue>
           </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>customerSuspectResult</name>
+              <className>customerSuspectResult</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1652634949975</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">false</rawValue>
+          </FactMappingValue>
         </factMappingValues>
       </Scenario>
       <Scenario>
@@ -766,6 +830,17 @@
               <type>OTHER</type>
             </expressionIdentifier>
             <rawValue class="string">5</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>customerSuspectResult</name>
+              <className>customerSuspectResult</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1652634949975</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">false</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
