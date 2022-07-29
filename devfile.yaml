@@ -1,0 +1,55 @@
+---
+schemaVersion: 2.0.0
+metadata:
+  name: quarkus-dmn-score
+  attributes:
+    type: workspace
+projects:
+  - name: quarkus-dmn-score
+    git:
+      remotes:
+        origin: https://github.com/snowdrop/spring-boot-http-booster
+      checkoutFrom:
+        revision: main
+components:
+  - name: tools
+    container:
+      image: quay.io/devfile/universal-developer-image:ubi8-0e189d9
+      memoryLimit: 3Gi
+      endpoints:
+        - exposure: none
+          name: debug
+          protocol: tcp
+          targetPort: 5005
+        - exposure: public
+          name: 8080-tcp
+          protocol: http
+          targetPort: 8080
+      volumeMounts:
+        - name: m2
+          path: /home/user/.m2
+
+  - name: m2
+    volume:
+      size: 1G
+
+commands:
+  - id: build-project
+    exec:
+      commandLine: JAVA_HOME=$JAVA_HOME_8 mvn clean install
+      component: tools
+      workingDir: "${PROJECT_SOURCE}"
+
+  - id: run-services
+    exec:
+      commandLine: JAVA_HOME=$JAVA_HOME_8 mvn quarkus:run -DskipTests
+      component: tools
+      workingDir: "${PROJECT_SOURCE}"
+
+  - id: debug-services
+    exec:
+      commandLine: |
+        JAVA_HOME=$JAVA_HOME_8 mvn quarkus:run -DskipTests \
+        -Drun.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005"
+      component: tools
+      workingDir: "${PROJECT_SOURCE}"
