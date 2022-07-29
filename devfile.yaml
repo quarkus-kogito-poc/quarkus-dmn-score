@@ -8,7 +8,7 @@ projects:
   - name: quarkus-dmn-score
     git:
       remotes:
-        origin: https://github.com/snowdrop/spring-boot-http-booster
+        origin: https://github.com/quarkus-kogito-poc/quarkus-dmn-score.git
       checkoutFrom:
         revision: main
 components:
