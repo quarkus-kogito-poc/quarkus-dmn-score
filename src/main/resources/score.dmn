@@ -195,7 +195,7 @@
     </dmn:informationRequirement>
     <dmn:decisionTable id="_04E12D05-8F9C-45C0-BD30-0694F5809A80" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_57466BB0-5CF0-4EB7-888C-BA3A69823CA3">
-        <dmn:inputExpression id="_51D2D37A-EA12-407D-A1C4-738AD1DC7A0E" typeRef="string">
+        <dmn:inputExpression id="_51D2D37A-EA12-407D-A1C4-738AD1DC7A0E" typeRef="tCity">
           <dmn:text>city</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
